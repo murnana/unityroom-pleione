@@ -1,0 +1,17 @@
+{
+  "includeCoAuthoredBy": true,
+  "permissions": {
+    "disableBypassPermissionsMode": "disable",
+      "allow": [
+        "Bash(git log:*)",
+        "Bash(git status:*)",
+        "Bash(git diff:*)"
+      ],
+      "ask": [],
+      "deny": [
+        "Read(/ProjectSettings/UnityConnectSettings.asset)"
+      ]
+  },
+  "disableAllHooks": true,
+  "enableAllProjectMcpServers": false
+}

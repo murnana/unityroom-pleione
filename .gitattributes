@@ -1,0 +1,57 @@
+
+
+## Unity ##
+
+*.cs diff=csharp text eol=lf
+*.cginc text eol=lf
+*.shader text eol=lf
+
+*.mat merge=unityyamlmerge eol=lf
+*.anim merge=unityyamlmerge eol=lf
+*.unity merge=unityyamlmerge eol=lf
+*.prefab merge=unityyamlmerge eol=lf
+*.physicsMaterial2D merge=unityyamlmerge eol=lf
+*.physicMaterial merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge eol=lf
+*.meta merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+
+
+## git-lfs ##
+
+#Image
+*.jpg -text
+*.jpeg -text
+*.png -text
+*.gif -text
+*.psd -text
+*.ai -text
+
+#Audio
+*.mp3 -text
+*.wav -text
+*.ogg -text
+
+#Video
+*.mp4 -text
+*.mov -text
+
+#3D Object
+*.FBX -text
+*.fbx -text
+*.blend -text
+*.obj -text
+
+#ETC
+*.a -text
+*.exr -text
+*.tga -text
+*.pdf -text
+*.zip -text
+*.dll -text
+*.unitypackage -text
+*.aif -text
+*.ttf -text
+*.rns -text
+*.reason -text
+*.lxo -text

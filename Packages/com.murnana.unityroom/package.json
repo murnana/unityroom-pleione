@@ -1,0 +1,10 @@
+{
+  "name": "com.murnana.unityroom",
+  "version": "0.0.1-exp.1",
+  "displayName": "Murnana unityroom",
+  "author": {
+    "name": "Murnana"
+  },
+  "unity": "6000.3",
+  "unityRelease": "10f1"
+}
