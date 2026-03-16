@@ -1,0 +1,21 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Compression Format must be Gzip. Go to Player Settings > Publishing Settings > Compression Format and set it to Gzip."
+msgstr "圧縮形式を Gzip に設定してください。Player Settings > Publishing Settings > Compression Format を Gzip に変更してください。"
+
+msgid "Development Build must be disabled for unityroom submission."
+msgstr "unityroom への投稿には Development Build を無効にしてください。"
+
+msgid "Canvas resolution is {0}x{1}. The recommended resolution for unityroom is 960x540."
+msgstr "キャンバスの解像度が {0}x{1} になっています。unityroom の推奨解像度は 960x540 です。"
+
+msgid "AddressableAssetSettings not found. Open Window > Asset Management > Addressables > Groups to check the settings."
+msgstr "AddressableAssetSettings が見つかりません。Window > Asset Management > Addressables > Groups を開いて設定を確認してください。"
+
+msgid "Addressables player build failed: {0}"
+msgstr "Addressables のビルドに失敗しました: {0}"
