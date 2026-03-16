@@ -39,6 +39,16 @@ namespace Murnana.UnityRoom.Editor.System
                     // {0} = 実際の横幅, {1} = 実際の縦幅
                     ErrorCode.ResolutionMismatch,
                     "Canvas resolution is {0}x{1}. The recommended resolution for unityroom is 960x540."
+                },
+                {
+                    ErrorCode.AddressableAssetSettingsNotFound,
+                    "AddressableAssetSettings not found. " +
+                    "Open Window > Asset Management > Addressables > Groups to check the settings."
+                },
+                {
+                    // {0} = BuildPlayerContent が返したエラー文字列
+                    ErrorCode.AddressablesPlayerBuildFailed,
+                    "Addressables player build failed: {0}"
                 }
             };
 

@@ -1,17 +1,21 @@
 {
   "includeCoAuthoredBy": true,
   "permissions": {
-    "disableBypassPermissionsMode": "disable",
-      "allow": [
-        "Bash(git log:*)",
-        "Bash(git status:*)",
-        "Bash(git diff:*)"
-      ],
-      "ask": [],
-      "deny": [
-        "Read(/ProjectSettings/UnityConnectSettings.asset)"
-      ]
+    "allow": [
+      "Bash(git log:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(find c:Projectsunityroom-pleioneAssets -type f -name *Build*.cs)",
+      "Bash(find /c/Projects/unityroom-pleione/Assets -type f -name *.cs)",
+      "Bash(find /c/Projects/unityroom-pleione -type f -name *.cs)",
+      "Bash(find /c/Projects/unityroom-pleione/Assets -name *Build* -o -name *Addressable* -o -name *Pipeline*)"
+    ],
+    "deny": [
+      "Read(/ProjectSettings/UnityConnectSettings.asset)"
+    ],
+    "ask": [],
+    "disableBypassPermissionsMode": "disable"
   },
-  "disableAllHooks": true,
-  "enableAllProjectMcpServers": false
+  "enableAllProjectMcpServers": false,
+  "disableAllHooks": true
 }
