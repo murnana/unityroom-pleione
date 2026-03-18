@@ -13,9 +13,3 @@ msgstr "unityroom への投稿には Development Build を無効にしてくだ�
 
 msgid "Canvas resolution is {0}x{1}. The recommended resolution for unityroom is 960x540."
 msgstr "キャンバスの解像度が {0}x{1} になっています。unityroom の推奨解像度は 960x540 です。"
-
-msgid "AddressableAssetSettings not found. Open Window > Asset Management > Addressables > Groups to check the settings."
-msgstr "AddressableAssetSettings が見つかりません。Window > Asset Management > Addressables > Groups を開いて設定を確認してください。"
-
-msgid "Addressables player build failed: {0}"
-msgstr "Addressables のビルドに失敗しました: {0}"

@@ -2,7 +2,9 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 pipeline {
-    agent any
+    agent {
+        label 'unityroom-pleione'
+    }
 
     parameters {
         string(
@@ -19,34 +21,7 @@ pipeline {
 
     stages {
         // ----------------------------------------------------------------
-        // Stage 1: Addressables ビルド
-        //   このプロジェクトは m_BuildAddressablesWithPlayerBuild が 0（無効）に
-        //   設定されているため、Player ビルド時に Addressables が自動ビルドされません。
-        //   WebGL ビルドの前に必ずここで Addressables をビルドします。
-        // ----------------------------------------------------------------
-        stage('Addressables ビルド') {
-            steps {
-                script {
-                    runUnity(
-                        executable: params.UNITY_EXECUTABLE,
-                        logFile:    'Logs/ci-addressables.log',
-                        extraArgs:  '-executeMethod Murnana.UnityRoom.Editor.CI.CIBuildScript.BuildAddressables'
-                    )
-                }
-            }
-            post {
-                always {
-                    // 成功・失敗にかかわらずログをアーカイブして、あとで確認できるようにする
-                    archiveArtifacts(
-                        artifacts:         'Logs/ci-addressables.log',
-                        allowEmptyArchive: true
-                    )
-                }
-            }
-        }
-
-        // ----------------------------------------------------------------
-        // Stage 2: WebGL リリースビルド
+        // Stage 1: WebGL リリースビルド
         //   -buildProfile で BuildProfile アセットを指定して WebGL ビルドを実行します。
         //   Unity 6 以降は BuildProfile アセットに Player Settings が含まれるため、
         //   解像度・圧縮形式・Development Build の設定がプロファイルから自動適用されます。
@@ -72,7 +47,7 @@ pipeline {
         }
 
         // ----------------------------------------------------------------
-        // Stage 3: 成果物アーカイブ
+        // Stage 2: 成果物アーカイブ
         //   Builds/Release/ 以下の WebGL ビルド成果物を Jenkins にアーカイブします。
         //   unityroom への投稿に必要な以下 4 ファイルが含まれます:
         //     - ローダーファイル (.js)
@@ -96,7 +71,6 @@ pipeline {
                 // ビルドが失敗したとき、ログの末尾をコンソールに出力して
                 // Jenkins の画面からすばやく原因を確認できるようにする
                 String[] logFiles = [
-                    'Logs/ci-addressables.log',
                     'Logs/ci-webgl-release.log'
                 ]
                 for (String logFile in logFiles) {
