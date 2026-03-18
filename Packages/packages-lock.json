@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.murnana.audiomanagement": {
+      "version": "file:com.murnana.audiomanagement",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.modules.audio": "1.0.0"
+      }
+    },
     "com.murnana.unityroom": {
       "version": "file:com.murnana.unityroom",
       "depth": 0,
@@ -278,7 +286,7 @@
     },
     "com.unity.modules.audio": {
       "version": "1.0.0",
-      "depth": 0,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {}
     },

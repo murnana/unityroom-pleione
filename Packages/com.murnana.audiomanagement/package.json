@@ -1,0 +1,13 @@
+{
+  "name": "com.murnana.audiomanagement",
+  "version": "0.0.1-exp.1",
+  "dependencies": {
+    "com.unity.modules.audio": "1.0.0"
+  },
+  "displayName": "Murnana AudioManagement",
+  "author": {
+    "name": "Murnana"
+  },
+  "unity": "6000.3",
+  "unityRelease": "10f1"
+}
