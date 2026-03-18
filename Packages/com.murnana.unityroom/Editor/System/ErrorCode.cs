@@ -26,17 +26,5 @@ namespace Murnana.UnityRoom.Editor.System
         /// エラーではなく警告扱いで、ビルドは続行されます。
         /// </summary>
         ResolutionMismatch = 1003,
-
-        /// <summary>
-        /// CI ビルド時に AddressableAssetSettings が見つからなかった。
-        /// プロジェクトに Addressables の設定ファイルが存在しないか、パスが間違っています。
-        /// </summary>
-        AddressableAssetSettingsNotFound = 1004,
-
-        /// <summary>
-        /// CI ビルド時に Addressables のコンテンツビルドが失敗した。
-        /// {0} には AddressableAssetSettings.BuildPlayerContent が返したエラー文字列が入ります。
-        /// </summary>
-        AddressablesPlayerBuildFailed = 1005
     }
 }
