@@ -2,9 +2,7 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 pipeline {
-    agent {
-        label 'unityroom-pleione'
-    }
+    agent { label 'unityroom-pleione' }
 
     parameters {
         string(
