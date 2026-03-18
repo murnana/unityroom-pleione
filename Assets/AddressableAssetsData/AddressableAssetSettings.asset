@@ -16,10 +16,10 @@ MonoBehaviour:
   m_currentHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
-  m_OptimizeCatalogSize: 0
+  m_OptimizeCatalogSize: 1
   m_BuildRemoteCatalog: 0
-  m_CatalogRequestsTimeout: 0
-  m_DisableCatalogUpdateOnStart: 0
+  m_CatalogRequestsTimeout: 10
+  m_DisableCatalogUpdateOnStart: 1
   m_InternalIdNamingMode: 3
   m_InternalBundleIdMode: 1
   m_AssetLoadMode: 0
@@ -37,8 +37,8 @@ MonoBehaviour:
   m_CCDEnabled: 0
   m_maxConcurrentWebRequests: 3
   m_UseUWRForLocalBundles: 1
-  m_BundleTimeout: 0
-  m_BundleRetryCount: 0
+  m_BundleTimeout: 10
+  m_BundleRetryCount: 3
   m_BundleRedirectLimit: -1
   m_SharedBundleSettings: 0
   m_SharedBundleSettingsCustomGroupIndex: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
-  m_BuildAddressablesWithPlayerBuild: 0
+  m_BuildAddressablesWithPlayerBuild: 1
   m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
   - {fileID: 11400000, guid: 15a523dc6426e5848aa05906f8111cc7, type: 2}
@@ -102,8 +102,7 @@ MonoBehaviour:
       m_InlineUsage: 0
     m_ProfileVersion: 1
   m_LabelTable:
-    m_LabelNames:
-    - default
+    m_LabelNames: []
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: d3f54ff64518930479555a87032ecfa1, type: 2}
