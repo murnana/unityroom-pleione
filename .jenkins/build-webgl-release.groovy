@@ -30,7 +30,7 @@ pipeline {
                     runUnity(
                         executable: params.UNITY_EXECUTABLE,
                         logFile:    'Logs/ci-webgl-release.log',
-                        extraArgs:  '-buildProfile "Assets/Settings/Build Profiles/Web - Release.asset"'
+                        extraArgs:  '-activeBuildProfile "Assets/Settings/Build Profiles/Web - Release.asset" -build "Builds/Release"'
                     )
                 }
             }
