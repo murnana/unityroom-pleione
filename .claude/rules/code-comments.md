@@ -1,3 +1,10 @@
+---
+paths:
+  - "Assets/Murnana UnityRoom/**/*.cs"
+  - "Packages/com.murnana.audiomanagement/**/*.cs"
+  - "Packages/com.murnana.unityroom/**/*.cs"
+---
+
 # Code Comment Style
 
 > **開発者向け日本語ドキュメント**: `Packages/com.murnana.unityroom/Documentation~/developer-guide/code-comments.md`
