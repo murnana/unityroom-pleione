@@ -12,3 +12,33 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
+
+msgid "Audio Management"
+msgstr "オーディオ管理"
+
+msgid "AudioMixer Parameter Generator"
+msgstr "AudioMixer パラメータージェネレーター"
+
+msgid "Output Directory"
+msgstr "出力先ディレクトリ"
+
+msgid "Root Namespace"
+msgstr "ルート名前空間"
+
+msgid "Generate All"
+msgstr "すべて生成"
+
+msgid "No AudioMixer assets found in the project."
+msgstr "プロジェクトに AudioMixer アセットが見つかりません。"
+
+msgid "Generated parameter constants for all AudioMixer assets."
+msgstr "すべての AudioMixer アセットのパラメーター定数を生成しました。"
+
+msgid "Generated parameter constants for '{0}' at '{1}'."
+msgstr "'{0}' のパラメーター定数を '{1}' に生成しました。"
+
+msgid "AudioMixer '{0}' has no exposed parameters. Skipping generation."
+msgstr "AudioMixer '{0}' に公開パラメーターがありません。生成をスキップします。"
+
+msgid "AudioMixer '{0}' was deleted. Please manually remove the corresponding generated parameter constants file if it is no longer needed."
+msgstr "AudioMixer '{0}' が削除されました。不要になった場合は、対応する生成済みパラメーター定数ファイルを手動で削除してください。"
