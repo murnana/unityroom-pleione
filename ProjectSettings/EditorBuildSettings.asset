@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Murnana AudioManagement/Sample/Sample.unity
+    guid: be614f508f189754c9f23c15b53e7110
+  - enabled: 1
     path: Assets/Murnana UnityRoom/Samples/Sample.unity
     guid: 2b5c59819c8655544a71d5cb60861768
   m_configObjects:

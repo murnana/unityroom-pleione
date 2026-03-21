@@ -19,6 +19,7 @@
 
 ### ファイル一覧
 * `Assets/Murnana UnityRoom/Samples/Audios/BGM/maoudamashii-8bit01.mp3`
+* `Assets/Murnana AudioManagement/Sample/Samples/Audios/SE/maou_se_8bit03.mp3`
 
 
 ## Fontworks Inc.

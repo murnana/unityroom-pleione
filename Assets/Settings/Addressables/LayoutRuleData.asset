@@ -63,19 +63,21 @@ MonoBehaviour:
               - rid: 8247288470644457699
         _addressProviderInternal:
           rid: 8247288470644457694
-      - _id: a227c5d4-d7e7-41b1-8af1-093e838b0269
-        _addressableGroup: {fileID: 11400000, guid: b7d7210a1778a8c41ab1ad976e5964ce, type: 2}
+      - _id: 15af8499-432e-4a9c-b16d-973e05c64c94
+        _addressableGroup: {fileID: 11400000, guid: e150f16ba57f5ee438be522ae3a7168c, type: 2}
         _control:
-          _value: 0
+          _value: 1
         _assetGroups:
           _internalList:
-          - _id: 0182e81a-9bb6-49ec-b1cb-fcc10f902af8
+          - _id: 151e1f3c-56d8-4586-a877-a6afb3291654
             _name:
               _value: Default Asset Group
             _filters:
-              _internalList: []
+              _internalList:
+              - rid: 8247288767137447936
+              - rid: 8247288767137447937
         _addressProviderInternal:
-          rid: 8247288470644457692
+          rid: 8247288764420587565
       - _id: 1cd47ebb-4059-43e7-87fa-c2dae7d8c124
         _addressableGroup: {fileID: 11400000, guid: d7ceaa13d1f0eab4d9edcbe159054be5, type: 2}
         _control:
@@ -99,13 +101,6 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 8247288470644457691
-      type: {class: AssetPathBasedAddressProvider, ns: SmartAddresser.Editor.Core.Models.LayoutRules.AddressRules, asm: SmartAddresser.Editor}
-      data:
-        _source: 2
-        _replaceWithRegex: 0
-        _pattern: 
-        _replacement: 
-    - rid: 8247288470644457692
       type: {class: AssetPathBasedAddressProvider, ns: SmartAddresser.Editor.Core.Models.LayoutRules.AddressRules, asm: SmartAddresser.Editor}
       data:
         _source: 2
@@ -197,5 +192,34 @@ MonoBehaviour:
             _fullName: UnityEngine.Sprite
             _assemblyQualifiedName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
               Culture=neutral, PublicKeyToken=null
+        _matchWithDerivedTypes: 1
+        _invertMatch: 0
+    - rid: 8247288764420587565
+      type: {class: AssetPathBasedAddressProvider, ns: SmartAddresser.Editor.Core.Models.LayoutRules.AddressRules, asm: SmartAddresser.Editor}
+      data:
+        _source: 2
+        _replaceWithRegex: 1
+        _pattern: Assets/Murnana UnityRoom/Samples/
+        _replacement: 
+    - rid: 8247288767137447936
+      type: {class: ObjectBasedAssetFilter, ns: SmartAddresser.Editor.Core.Models.Shared.AssetGroups.AssetFilterImpl, asm: SmartAddresser.Editor}
+      data:
+        _id: c647c09f-0c3b-4649-a9e4-f8539fac4501
+        _folderTargetingMode: 0
+        _object:
+          _isListMode: 0
+          _values:
+          - {fileID: 102900000, guid: fd1d00ab4fdd6464aa3d8dd0ca5b6d51, type: 3}
+    - rid: 8247288767137447937
+      type: {class: TypeBasedAssetFilter, ns: SmartAddresser.Editor.Core.Models.Shared.AssetGroups.AssetFilterImpl, asm: SmartAddresser.Editor}
+      data:
+        _id: e241db90-5882-40cd-9d98-632bdd1fd385
+        _type:
+          _isListMode: 0
+          _values:
+          - _name: AudioClip
+            _fullName: UnityEngine.AudioClip
+            _assemblyQualifiedName: UnityEngine.AudioClip, UnityEngine.AudioModule,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         _matchWithDerivedTypes: 1
         _invertMatch: 0
